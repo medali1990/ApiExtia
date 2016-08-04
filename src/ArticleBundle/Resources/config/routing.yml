@@ -1,0 +1,19 @@
+article_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ArticleBundle:Default:index }
+
+Articles:
+    path:     /gets
+    defaults: { _controller: ArticleBundle:Article:getArticles }
+
+enreg:
+    path:     /save
+    defaults: { _controller: ArticleBundle:Article:postArticle }
+
+delet:
+    path:     /delet/{id}
+    defaults: { _controller: ArticleBundle:Article:deletArticle }
+
+get:
+    path:     /get/{id}
+    defaults: { _controller: ArticleBundle:Article:getArticle }

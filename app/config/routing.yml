@@ -1,0 +1,12 @@
+front_office:
+    resource: "@FrontOfficeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+article:
+    resource: "@ArticleBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+

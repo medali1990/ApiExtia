@@ -1,0 +1,15 @@
+Liste_Articles:
+    path:     /
+    defaults: { _controller: FrontOfficeBundle:Article:getArticles }
+
+Article:
+    path:     /article/{id}
+    defaults: { _controller: FrontOfficeBundle:Article:getArticle }
+
+Ajout_article:
+    path:     /creer
+    defaults: { _controller: FrontOfficeBundle:Article:NewArticle }
+
+Suppression_article:
+    path:     /supprimer/{id}
+    defaults: { _controller: FrontOfficeBundle:Article:DeleteArticle }
