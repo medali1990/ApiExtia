@@ -22,57 +22,52 @@ class __TwigTemplate_5b146713fa4a16f35a91dfa5c6edbb5c65c1ce2c2051dbb4ebc2131e7ba
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6a6569b18a1c266a7c3d52eed0aab733a930103a098699360310fded1ff81ebf = $this->env->getExtension("native_profiler");
-        $__internal_6a6569b18a1c266a7c3d52eed0aab733a930103a098699360310fded1ff81ebf->enter($__internal_6a6569b18a1c266a7c3d52eed0aab733a930103a098699360310fded1ff81ebf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:NewArticle.html.twig"));
+        $__internal_a8a6e7106f1aaf8eb5de70cfc23de3945d134e643d7c8055c9e40001faacd93c = $this->env->getExtension("native_profiler");
+        $__internal_a8a6e7106f1aaf8eb5de70cfc23de3945d134e643d7c8055c9e40001faacd93c->enter($__internal_a8a6e7106f1aaf8eb5de70cfc23de3945d134e643d7c8055c9e40001faacd93c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:NewArticle.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6a6569b18a1c266a7c3d52eed0aab733a930103a098699360310fded1ff81ebf->leave($__internal_6a6569b18a1c266a7c3d52eed0aab733a930103a098699360310fded1ff81ebf_prof);
+        $__internal_a8a6e7106f1aaf8eb5de70cfc23de3945d134e643d7c8055c9e40001faacd93c->leave($__internal_a8a6e7106f1aaf8eb5de70cfc23de3945d134e643d7c8055c9e40001faacd93c_prof);
 
     }
 
-    // line 3
+    // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_fbeeed28c448e843eaf0299d9c1bdefb0672f433e84a4e906ddfe9ab16b1d84e = $this->env->getExtension("native_profiler");
-        $__internal_fbeeed28c448e843eaf0299d9c1bdefb0672f433e84a4e906ddfe9ab16b1d84e->enter($__internal_fbeeed28c448e843eaf0299d9c1bdefb0672f433e84a4e906ddfe9ab16b1d84e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_f9b0f7463f5dafeb1eb05624ac538c280f3b40fa1c0d8efdb0db6033dd2250e8 = $this->env->getExtension("native_profiler");
+        $__internal_f9b0f7463f5dafeb1eb05624ac538c280f3b40fa1c0d8efdb0db6033dd2250e8->enter($__internal_f9b0f7463f5dafeb1eb05624ac538c280f3b40fa1c0d8efdb0db6033dd2250e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        // line 4
+        // line 3
         echo "  Creation article-";
         $this->displayParentBlock("title", $context, $blocks);
         echo " 
 ";
         
-        $__internal_fbeeed28c448e843eaf0299d9c1bdefb0672f433e84a4e906ddfe9ab16b1d84e->leave($__internal_fbeeed28c448e843eaf0299d9c1bdefb0672f433e84a4e906ddfe9ab16b1d84e_prof);
+        $__internal_f9b0f7463f5dafeb1eb05624ac538c280f3b40fa1c0d8efdb0db6033dd2250e8->leave($__internal_f9b0f7463f5dafeb1eb05624ac538c280f3b40fa1c0d8efdb0db6033dd2250e8_prof);
 
     }
 
-    // line 7
+    // line 5
     public function block_article_body($context, array $blocks = array())
     {
-        $__internal_fae00541cd3f348f155f0aac2672048b65a3d7ff0cc7f275064b61bf61bead9c = $this->env->getExtension("native_profiler");
-        $__internal_fae00541cd3f348f155f0aac2672048b65a3d7ff0cc7f275064b61bf61bead9c->enter($__internal_fae00541cd3f348f155f0aac2672048b65a3d7ff0cc7f275064b61bf61bead9c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
+        $__internal_d296e98364b65b44744b284ff21ef198a4d40fd8fee05deef37b4c5b15309ac2 = $this->env->getExtension("native_profiler");
+        $__internal_d296e98364b65b44744b284ff21ef198a4d40fd8fee05deef37b4c5b15309ac2->enter($__internal_d296e98364b65b44744b284ff21ef198a4d40fd8fee05deef37b4c5b15309ac2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
 
-        // line 8
-        echo "
-\t<div class=\"row\">
+        // line 6
+        echo "\t<div class=\"row\">
         <div class=\"col-lg-12 text-center\">
-           <h1>Creer un article - version_1.1</h1>
-
+           <h1>Creer un article</h1>
 \t\t\t<div class=\"well\">
 \t\t\t  ";
-        // line 14
+        // line 10
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form');
         echo "
 \t\t\t</div>
-
         </div>
     </div>
-  
-
 ";
         
-        $__internal_fae00541cd3f348f155f0aac2672048b65a3d7ff0cc7f275064b61bf61bead9c->leave($__internal_fae00541cd3f348f155f0aac2672048b65a3d7ff0cc7f275064b61bf61bead9c_prof);
+        $__internal_d296e98364b65b44744b284ff21ef198a4d40fd8fee05deef37b4c5b15309ac2->leave($__internal_d296e98364b65b44744b284ff21ef198a4d40fd8fee05deef37b4c5b15309ac2_prof);
 
     }
 
@@ -88,27 +83,20 @@ class __TwigTemplate_5b146713fa4a16f35a91dfa5c6edbb5c65c1ce2c2051dbb4ebc2131e7ba
 
     public function getDebugInfo()
     {
-        return array (  65 => 14,  57 => 8,  51 => 7,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  63 => 10,  57 => 6,  51 => 5,  41 => 3,  35 => 2,  11 => 1,);
     }
 }
 /* {% extends "FrontOfficeBundle::ArticleLayout.html.twig" %}*/
-/* */
 /* {% block title %}*/
 /*   Creation article-{{ parent() }} */
 /* {% endblock %}*/
-/* */
 /* {% block article_body %}*/
-/* */
 /* 	<div class="row">*/
 /*         <div class="col-lg-12 text-center">*/
-/*            <h1>Creer un article - version_1.1</h1>*/
-/* */
+/*            <h1>Creer un article</h1>*/
 /* 			<div class="well">*/
 /* 			  {{ form(form) }}*/
 /* 			</div>*/
-/* */
 /*         </div>*/
 /*     </div>*/
-/*   */
-/* */
 /* {% endblock %}*/
