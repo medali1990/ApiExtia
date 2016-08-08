@@ -19,3 +19,6 @@ f2b5b3,::1,GET,http://localhost:8080/Extia/web/app_dev.php/creer,1470317856,,200
 1e68b4,::1,GET,http://localhost:8080/Extia/web/app_dev.php/creer,1470317861,,200
 24e76d,::1,GET,http://localhost:8080/Extia/web/app_dev.php/,1470317872,,200
 9f63b4,::1,GET,http://localhost:8080/Extia/web/app_dev.php/supprimer/%22,1470317886,,200
+cd85ce,::1,GET,http://localhost:8080/Extia/web/app_dev.php/creer,1470665090,,200
+1ad624,::1,GET,http://localhost:8080/Extia/web/app_dev.php/,1470665092,,200
+876cc1,::1,GET,http://localhost:8080/Extia/web/app_dev.php/save,1470665096,,200
