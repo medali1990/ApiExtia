@@ -10,14 +10,14 @@ use Symfony\Component\HttpFoundation\Request;
 
 class ArticleController extends Controller
 {
-    public function getArticlesAction()
+    /*public function getArticlesAction()
     {
         return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig');
-    }
-
+    }*/
+    /*
     public function getArticleAction($id){
     	return $this->render('FrontOfficeBundle:FrontOffice:ViewArticle.html.twig',array('slug' => $id));
-    }
+    }*/
 
     public function NewArticleAction(Request $request){
 
@@ -50,8 +50,8 @@ class ArticleController extends Controller
       'form' => $form->createView(),
     ));
     }
-
+    /*
     public function DeleteArticleAction($id){
     	return new Response("l'article ".$id." est supprimé");
-    }
+    }*/
 }
