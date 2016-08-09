@@ -24,3 +24,4 @@ fb4882,::1,GET,http://localhost:8080/Extia/web/app_dev.php/creer,1470321966,,200
 1aafc5,::1,GET,http://localhost:8080/Extia/web/app_dev.php/gets,1470728437,,200
 dc28fd,::1,GET,http://localhost:8080/Extia/web/app_dev.php/save,1470728471,,200
 5bbc59,::1,GET,http://localhost:8080/Extia/web/app_dev.php/creer,1470728568,,200
+fa9b1a,::1,POST,http://localhost:8080/Extia/web/app_dev.php/creer,1470730707,,200
