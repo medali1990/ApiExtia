@@ -9,7 +9,31 @@
 	<div class="row">
         <div class="col-lg-12 text-center">
            <h1>Liste des articles</h1>
-
+           		<div class="col-md-3"></div>	
+           		
+	           	<div class="col-md-6 center">	
+		           <table class="table table-striped">
+		           		<thead class="thead-inverse">
+		           			<tr>
+		           				<th>Num</th>
+		           				<th>Titre</th>
+		           				<th>Description</th>
+		           				<th>Auteur</th>
+		           			</tr>
+		           		</thead>
+		           		<tbody>
+		           			{% for article in articles %}
+		           			<tr>
+		           				<th scope="row">{{ article.id }}</th>
+		           				<th scope="row">{{ article.title }}</th>
+		           				<th scope="row">{{ article.body }}</th>
+		           				<th scope="row">{{ article.createdBy }}</th>
+		           			</tr>
+		           			{% endfor %}
+		           		</tbody>
+		           </table>
+		        </div>
+	          	<div class="col-md-3"></div>
         </div>
     </div>
 

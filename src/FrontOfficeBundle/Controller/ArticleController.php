@@ -12,7 +12,11 @@ class ArticleController extends Controller
 {
     public function getArticlesAction()
     {
-        return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig');
+        $Repository = $this->getDoctrine()->getManager()->getRepository('ArticleBundle:Article');
+        $Articles = $Repository->findAll();
+        //var_dump($Articles);
+        //die();
+        return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles));
     }
 
     public function getArticleAction($id){
