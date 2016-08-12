@@ -18,6 +18,7 @@
 		           				<th>Titre</th>
 		           				<th>Description</th>
 		           				<th>Auteur</th>
+		           				<th>Action</th>
 		           			</tr>
 		           		</thead>
 		           		<tbody>
@@ -27,6 +28,7 @@
 		           				<th scope="row">{{ article.title }}</th>
 		           				<th scope="row">{{ article.body }}</th>
 		           				<th scope="row">{{ article.createdBy }}</th>
+		           				<th scope="row" class="inline"><a class="btn btn-primary" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="btn btn-danger" style="margin-left:5px;" href="{{ path('Suppression_article', {'id':article.id}) }}">Supprimer</a></th>
 		           			</tr>
 		           			{% endfor %}
 		           		</tbody>
