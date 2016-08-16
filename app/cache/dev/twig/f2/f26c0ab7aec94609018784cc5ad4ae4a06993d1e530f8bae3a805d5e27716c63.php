@@ -15,8 +15,8 @@ class __TwigTemplate_d582a48d252a1670ef9cf4b0ca714c8db0de6599e0f64af258eaf238548
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1210a1b32e546c0a3cf79950596ddfb456e5241280a071da9fe5ef2c6e5010e5 = $this->env->getExtension("native_profiler");
-        $__internal_1210a1b32e546c0a3cf79950596ddfb456e5241280a071da9fe5ef2c6e5010e5->enter($__internal_1210a1b32e546c0a3cf79950596ddfb456e5241280a071da9fe5ef2c6e5010e5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:exception.txt.twig"));
+        $__internal_469a5e5884f5fefaad2ec8b5a3b355773b52bacfe59ee88aa0dd0115f39d7efd = $this->env->getExtension("native_profiler");
+        $__internal_469a5e5884f5fefaad2ec8b5a3b355773b52bacfe59ee88aa0dd0115f39d7efd->enter($__internal_469a5e5884f5fefaad2ec8b5a3b355773b52bacfe59ee88aa0dd0115f39d7efd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:exception.txt.twig"));
 
         // line 1
         echo "[exception] ";
@@ -50,7 +50,7 @@ class __TwigTemplate_d582a48d252a1670ef9cf4b0ca714c8db0de6599e0f64af258eaf238548
         unset($context['_seq'], $context['_iterated'], $context['i'], $context['e'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_1210a1b32e546c0a3cf79950596ddfb456e5241280a071da9fe5ef2c6e5010e5->leave($__internal_1210a1b32e546c0a3cf79950596ddfb456e5241280a071da9fe5ef2c6e5010e5_prof);
+        $__internal_469a5e5884f5fefaad2ec8b5a3b355773b52bacfe59ee88aa0dd0115f39d7efd->leave($__internal_469a5e5884f5fefaad2ec8b5a3b355773b52bacfe59ee88aa0dd0115f39d7efd_prof);
 
     }
 
