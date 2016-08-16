@@ -22,20 +22,20 @@ class __TwigTemplate_5b146713fa4a16f35a91dfa5c6edbb5c65c1ce2c2051dbb4ebc2131e7ba
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ee3cabc26f2926143dd437f301bdf3704967b0aee561da6ca5ca470310b5295f = $this->env->getExtension("native_profiler");
-        $__internal_ee3cabc26f2926143dd437f301bdf3704967b0aee561da6ca5ca470310b5295f->enter($__internal_ee3cabc26f2926143dd437f301bdf3704967b0aee561da6ca5ca470310b5295f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:NewArticle.html.twig"));
+        $__internal_926a2f1747088200f059a40cb511dc4d86ca37ecd90af49a03eb377d89397dd8 = $this->env->getExtension("native_profiler");
+        $__internal_926a2f1747088200f059a40cb511dc4d86ca37ecd90af49a03eb377d89397dd8->enter($__internal_926a2f1747088200f059a40cb511dc4d86ca37ecd90af49a03eb377d89397dd8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:NewArticle.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ee3cabc26f2926143dd437f301bdf3704967b0aee561da6ca5ca470310b5295f->leave($__internal_ee3cabc26f2926143dd437f301bdf3704967b0aee561da6ca5ca470310b5295f_prof);
+        $__internal_926a2f1747088200f059a40cb511dc4d86ca37ecd90af49a03eb377d89397dd8->leave($__internal_926a2f1747088200f059a40cb511dc4d86ca37ecd90af49a03eb377d89397dd8_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_92689c63b4314b1525cb1cf15c433d63a497a397164f701a9e271bae86b57238 = $this->env->getExtension("native_profiler");
-        $__internal_92689c63b4314b1525cb1cf15c433d63a497a397164f701a9e271bae86b57238->enter($__internal_92689c63b4314b1525cb1cf15c433d63a497a397164f701a9e271bae86b57238_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_6e9ba774461650f49d6f9d3db088a54c2922c96f9460b9b57f6adfe55df6fe10 = $this->env->getExtension("native_profiler");
+        $__internal_6e9ba774461650f49d6f9d3db088a54c2922c96f9460b9b57f6adfe55df6fe10->enter($__internal_6e9ba774461650f49d6f9d3db088a54c2922c96f9460b9b57f6adfe55df6fe10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 4
         echo "  Creation article-";
@@ -43,121 +43,85 @@ class __TwigTemplate_5b146713fa4a16f35a91dfa5c6edbb5c65c1ce2c2051dbb4ebc2131e7ba
         echo " 
 ";
         
-        $__internal_92689c63b4314b1525cb1cf15c433d63a497a397164f701a9e271bae86b57238->leave($__internal_92689c63b4314b1525cb1cf15c433d63a497a397164f701a9e271bae86b57238_prof);
+        $__internal_6e9ba774461650f49d6f9d3db088a54c2922c96f9460b9b57f6adfe55df6fe10->leave($__internal_6e9ba774461650f49d6f9d3db088a54c2922c96f9460b9b57f6adfe55df6fe10_prof);
 
     }
 
     // line 7
     public function block_article_body($context, array $blocks = array())
     {
-        $__internal_44f45b313aa707015823e8c1d77aa936c1bf32817e22fbb868200fcbaada3f59 = $this->env->getExtension("native_profiler");
-        $__internal_44f45b313aa707015823e8c1d77aa936c1bf32817e22fbb868200fcbaada3f59->enter($__internal_44f45b313aa707015823e8c1d77aa936c1bf32817e22fbb868200fcbaada3f59_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
+        $__internal_04144d434ea18b2dd272a02dd8085f1f0e946b081ecd7a0b071a613f57f2fda2 = $this->env->getExtension("native_profiler");
+        $__internal_04144d434ea18b2dd272a02dd8085f1f0e946b081ecd7a0b071a613f57f2fda2->enter($__internal_04144d434ea18b2dd272a02dd8085f1f0e946b081ecd7a0b071a613f57f2fda2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
 
         // line 8
         echo "
 \t<div class=\"row\">
         <div class=\"col-lg-12 text-center\">
            <h1>Creer un article</h1>
-
-\t\t\t<div class=\"well\">
-\t\t\t  <!--";
+\t\t\t<div class=\"row\">
+                    <div class=\"col-lg-12\">
+                    ";
         // line 14
-        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form');
-        echo "-->
-\t\t\t  ";
-        // line 15
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
-\t\t\t  <!--";
-        // line 16
+                    ";
+        // line 15
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'errors');
-        echo "-->
-\t\t\t\t  <div class=\"form-group\">
-\t\t\t\t\t";
-        // line 18
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "title", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "titre "));
         echo "
-\t\t\t\t\t";
+                        <div class=\"row\">
+                            <div class=\"col-md-6\">
+                                <div class=\"form-group\">
+                                    ";
         // line 19
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "title", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "title", array()), 'row', array("attr" => array("class" => "form-control", "placeholder" => "Your name")));
         echo "
-\t\t\t\t\t";
-        // line 20
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "title", array()), 'errors');
+                                </div>
+                                <div class=\"form-group\">
+                                    ";
+        // line 22
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "laeding", array()), 'row', array("attr" => array("class" => "form-control", "placeholder" => "Your Mail")));
         echo "
-\t\t\t\t\t\t  <div class=\"col-sm-4\">\t
-\t\t\t\t\t\t  \t
-\t\t\t\t\t\t  </div>
-\t\t\t\t  </div>
-\t\t\t\t  <div class=\"form-group\">
-\t\t\t\t\t";
-        // line 26
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "laeding", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "leading"));
+                                </div>
+                                <div class=\"form-group\">
+                                    ";
+        // line 25
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "body", array()), 'row', array("attr" => array("class" => "form-control", "placeholder" => "Your Tel")));
         echo "
-\t\t\t\t\t";
-        // line 27
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "laeding", array()), 'errors');
-        echo "
-\t\t\t\t\t\t  <div class=\"col-sm-4\">\t
-\t\t\t\t\t\t  \t";
+                                </div>
+                            
+                                <div class=\"form-group\">
+                                    ";
         // line 29
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "laeding", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "createdBy", array()), 'row', array("attr" => array("class" => "form-control", "placeholder" => "Your Message")));
         echo "
-\t\t\t\t\t\t  </div>
-\t\t\t\t  </div>
-\t\t\t\t  <div class=\"form-group\">
-\t\t\t\t\t";
+                                </div>
+                            
+                            \t<div class=\"form-group\">
+                                    ";
         // line 33
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "body", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Description"));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "save", array()), 'row', array("attr" => array("class" => "btn btn-xl")));
         echo "
-\t\t\t\t\t";
-        // line 34
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "body", array()), 'errors');
-        echo "
-\t\t\t\t\t\t  <div class=\"col-sm-4\">\t
-\t\t\t\t\t\t  \t";
-        // line 36
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "body", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-\t\t\t\t\t\t  </div>
-\t\t\t\t  </div>
-\t\t\t\t  <div class=\"form-group\">
-\t\t\t\t\t";
-        // line 40
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "createdBy", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Auteur"));
-        echo "
-\t\t\t\t\t";
-        // line 41
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "createdBy", array()), 'errors');
-        echo "
-\t\t\t\t\t\t  <div class=\"col-sm-4\">\t
-\t\t\t\t\t\t  \t";
-        // line 43
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "createdBy", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-\t\t\t\t\t\t  </div>
-\t\t\t\t  </div>
-\t\t\t\t  ";
-        // line 46
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "save", array()), 'widget', array("attr" => array("class" => "btn btn-primary")));
-        echo "\t
-\t\t\t  <div class=\"alert alert-danger\">";
-        // line 47
+                                </div>
+                            </div>
+                        </div>
+                        
+                    ";
+        // line 38
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'rest');
-        echo "</div>\t \t  
-\t\t\t  ";
-        // line 48
+        echo "
+                    ";
+        // line 39
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
-        echo "\t  
-\t\t\t</div>
-
+        echo "
+                    </div>
+                </div>
         </div>
     </div>
   
 
 ";
         
-        $__internal_44f45b313aa707015823e8c1d77aa936c1bf32817e22fbb868200fcbaada3f59->leave($__internal_44f45b313aa707015823e8c1d77aa936c1bf32817e22fbb868200fcbaada3f59_prof);
+        $__internal_04144d434ea18b2dd272a02dd8085f1f0e946b081ecd7a0b071a613f57f2fda2->leave($__internal_04144d434ea18b2dd272a02dd8085f1f0e946b081ecd7a0b071a613f57f2fda2_prof);
 
     }
 
@@ -173,7 +137,7 @@ class __TwigTemplate_5b146713fa4a16f35a91dfa5c6edbb5c65c1ce2c2051dbb4ebc2131e7ba
 
     public function getDebugInfo()
     {
-        return array (  150 => 48,  146 => 47,  142 => 46,  136 => 43,  131 => 41,  127 => 40,  120 => 36,  115 => 34,  111 => 33,  104 => 29,  99 => 27,  95 => 26,  86 => 20,  82 => 19,  78 => 18,  73 => 16,  69 => 15,  65 => 14,  57 => 8,  51 => 7,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  114 => 39,  110 => 38,  102 => 33,  95 => 29,  88 => 25,  82 => 22,  76 => 19,  69 => 15,  65 => 14,  57 => 8,  51 => 7,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
 /* {% extends "FrontOfficeBundle::ArticleLayout.html.twig" %}*/
@@ -187,45 +151,36 @@ class __TwigTemplate_5b146713fa4a16f35a91dfa5c6edbb5c65c1ce2c2051dbb4ebc2131e7ba
 /* 	<div class="row">*/
 /*         <div class="col-lg-12 text-center">*/
 /*            <h1>Creer un article</h1>*/
-/* */
-/* 			<div class="well">*/
-/* 			  <!--{{ form(form) }}-->*/
-/* 			  {{ form_start(form) }}*/
-/* 			  <!--{{ form_errors(form) }}-->*/
-/* 				  <div class="form-group">*/
-/* 					{{ form_label(form.title, "titre ",{'label_attr':{'class':'col-sm-3 control-label'}} ) }}*/
-/* 					{{ form_widget(form.title, {'attr':{'class':'form-control'}}) }}*/
-/* 					{{ form_errors(form.title) }}*/
-/* 						  <div class="col-sm-4">	*/
-/* 						  	*/
-/* 						  </div>*/
-/* 				  </div>*/
-/* 				  <div class="form-group">*/
-/* 					{{ form_label(form.laeding, "leading",{'label_attr':{'class':'col-sm-3 control-label'}} ) }}*/
-/* 					{{ form_errors(form.laeding) }}*/
-/* 						  <div class="col-sm-4">	*/
-/* 						  	{{ form_widget(form.laeding, {'attr':{'class':'form-control'}}) }}*/
-/* 						  </div>*/
-/* 				  </div>*/
-/* 				  <div class="form-group">*/
-/* 					{{ form_label(form.body, "Description",{'label_attr':{'class':'col-sm-3 control-label'}} ) }}*/
-/* 					{{ form_errors(form.body) }}*/
-/* 						  <div class="col-sm-4">	*/
-/* 						  	{{ form_widget(form.body, {'attr':{'class':'form-control'}}) }}*/
-/* 						  </div>*/
-/* 				  </div>*/
-/* 				  <div class="form-group">*/
-/* 					{{ form_label(form.createdBy, "Auteur",{'label_attr':{'class':'col-sm-3 control-label'}} ) }}*/
-/* 					{{ form_errors(form.createdBy) }}*/
-/* 						  <div class="col-sm-4">	*/
-/* 						  	{{ form_widget(form.createdBy, {'attr':{'class':'form-control'}}) }}*/
-/* 						  </div>*/
-/* 				  </div>*/
-/* 				  {{ form_widget(form.save, {'attr':{'class':'btn btn-primary'}}) }}	*/
-/* 			  <div class="alert alert-danger">{{ form_rest(form) }}</div>	 	  */
-/* 			  {{ form_end(form) }}	  */
-/* 			</div>*/
-/* */
+/* 			<div class="row">*/
+/*                     <div class="col-lg-12">*/
+/*                     {{ form_start(form) }}*/
+/*                     {{ form_errors(form) }}*/
+/*                         <div class="row">*/
+/*                             <div class="col-md-6">*/
+/*                                 <div class="form-group">*/
+/*                                     {{ form_row(form.title,{'attr':{'class':'form-control','placeholder':'Your name'}}) }}*/
+/*                                 </div>*/
+/*                                 <div class="form-group">*/
+/*                                     {{ form_row(form.laeding,{'attr':{'class':'form-control','placeholder':'Your Mail'}}) }}*/
+/*                                 </div>*/
+/*                                 <div class="form-group">*/
+/*                                     {{ form_row(form.body,{'attr':{'class':'form-control','placeholder':'Your Tel'}}) }}*/
+/*                                 </div>*/
+/*                             */
+/*                                 <div class="form-group">*/
+/*                                     {{ form_row(form.createdBy,{'attr':{'class':'form-control','placeholder':'Your Message'}}) }}*/
+/*                                 </div>*/
+/*                             */
+/*                             	<div class="form-group">*/
+/*                                     {{ form_row(form.save,{'attr':{'class':'btn btn-xl'}}) }}*/
+/*                                 </div>*/
+/*                             </div>*/
+/*                         </div>*/
+/*                         */
+/*                     {{ form_rest(form) }}*/
+/*                     {{ form_end(form) }}*/
+/*                     </div>*/
+/*                 </div>*/
 /*         </div>*/
 /*     </div>*/
 /*   */

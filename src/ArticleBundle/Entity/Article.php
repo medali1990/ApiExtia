@@ -4,6 +4,7 @@ namespace ArticleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\DBAL\Types\SmallIntType;
+use Doctrine\Common\Collections\ArrayCollection;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
