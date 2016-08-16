@@ -51,7 +51,7 @@ class ArticleController extends Controller
     $request->getSession()->getFlashBag()->add('notice', 'Article bien enregistrée.');
 
     	return $this->render('FrontOfficeBundle:FrontOffice:NewArticle.html.twig',array(
-      'form' => $form->createView(),
+      'form' => $form->createView()
     ));
     }
 
