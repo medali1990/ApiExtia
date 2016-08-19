@@ -20,7 +20,9 @@ class ArticleController extends Controller
     }
 
     public function getArticleAction($id){
-    	return $this->render('FrontOfficeBundle:FrontOffice:ViewArticle.html.twig',array('slug' => $id));
+      $Repository = $this->getDoctrine()->getManager()->getRepository('ArticleBundle:Article');
+        $Article = $Repository->find($id);
+    	return $this->render('FrontOfficeBundle:FrontOffice:ViewArticle.html.twig',array('article' => $Article));
     }
 
     public function NewArticleAction(Request $request){
@@ -56,6 +58,15 @@ class ArticleController extends Controller
     }
 
     public function DeleteArticleAction($id){
-    	return new Response("l'article ".$id." est supprimé");
+      $em = $this->getDoctrine()->getEntityManager();
+      $Article = $em->getRepository('ArticleBundle:Article')->find($id);
+      if(!$Article){
+        throw $this->createNotFoundException('pas darticle');
+      }
+      $em->remove($Article);
+      $em->flush();
+      $Repository = $this->getDoctrine()->getManager()->getRepository('ArticleBundle:Article');
+        $Articles = $Repository->findAll();
+        return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles));
     }
 }
