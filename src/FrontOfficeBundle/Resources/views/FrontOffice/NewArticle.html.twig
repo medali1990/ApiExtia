@@ -26,7 +26,6 @@
                             </div>
                         	<div class="form-group inline">
                                 {{ form_row(form.save,{'attr':{'class':'btn btn-xl'}}) }}
-                                <a href="#"><button class="btn btn-danger">Retour</button> </a>
                             </div>
                         
                 {{ form_rest(form) }}
@@ -34,6 +33,7 @@
                 
            
         </div>
+        <a href="{{ path('Liste_Articles') }}"><button class="btn btn-danger">Retour</button> </a>
     </div>
     
   
