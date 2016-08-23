@@ -6,7 +6,7 @@ use ArticleBundle\Entity\Article;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;	
 use Symfony\Component\HttpFoundation\Request;
-
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ArticleController extends Controller
 {
@@ -67,6 +67,8 @@ class ArticleController extends Controller
       $em->flush();
       $Repository = $this->getDoctrine()->getManager()->getRepository('ArticleBundle:Article');
         $Articles = $Repository->findAll();
-        return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles));
+        //return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles));
+        $response = new JsonResponse();
+        return $response->setData(array('article supprime' => $id));
     }
 }

@@ -12,6 +12,7 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'article_body' => array($this, 'block_article_body'),
+            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -22,20 +23,20 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4fcb54a31754666a4c5e1c8659a5b2d1f9ec493eb0c77b0207b87981aeb2f740 = $this->env->getExtension("native_profiler");
-        $__internal_4fcb54a31754666a4c5e1c8659a5b2d1f9ec493eb0c77b0207b87981aeb2f740->enter($__internal_4fcb54a31754666a4c5e1c8659a5b2d1f9ec493eb0c77b0207b87981aeb2f740_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:ViewArticles.html.twig"));
+        $__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe = $this->env->getExtension("native_profiler");
+        $__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe->enter($__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:ViewArticles.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_4fcb54a31754666a4c5e1c8659a5b2d1f9ec493eb0c77b0207b87981aeb2f740->leave($__internal_4fcb54a31754666a4c5e1c8659a5b2d1f9ec493eb0c77b0207b87981aeb2f740_prof);
+        $__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe->leave($__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_8a5a10bfc658e05e9b40069a274cec07d810e9ed752ea45380bf758db7a0e0f6 = $this->env->getExtension("native_profiler");
-        $__internal_8a5a10bfc658e05e9b40069a274cec07d810e9ed752ea45380bf758db7a0e0f6->enter($__internal_8a5a10bfc658e05e9b40069a274cec07d810e9ed752ea45380bf758db7a0e0f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216 = $this->env->getExtension("native_profiler");
+        $__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216->enter($__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 4
         echo "  Liste articles-";
@@ -43,15 +44,15 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
         echo "
 ";
         
-        $__internal_8a5a10bfc658e05e9b40069a274cec07d810e9ed752ea45380bf758db7a0e0f6->leave($__internal_8a5a10bfc658e05e9b40069a274cec07d810e9ed752ea45380bf758db7a0e0f6_prof);
+        $__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216->leave($__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216_prof);
 
     }
 
     // line 7
     public function block_article_body($context, array $blocks = array())
     {
-        $__internal_95adbc14bd753701940d3e9fb1b95ceebbfd2a7d9022857e45612dd85e001137 = $this->env->getExtension("native_profiler");
-        $__internal_95adbc14bd753701940d3e9fb1b95ceebbfd2a7d9022857e45612dd85e001137->enter($__internal_95adbc14bd753701940d3e9fb1b95ceebbfd2a7d9022857e45612dd85e001137_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
+        $__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b = $this->env->getExtension("native_profiler");
+        $__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b->enter($__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
 
         // line 8
         echo "
@@ -97,9 +98,11 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 \t\t           \t\t\t\t<th scope=\"row\" class=\"inline col-lg-4 col-md-4 col-sm-4 col-xs-4\"><a class=\"btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5\" href=\"";
             // line 31
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("Article", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
-            echo "\">Details</a><a class=\"btn btn-danger col-lg-6 col-md-5 col-sm-4 col-xs-4\" style=\"margin-left:5px;\" href=\"";
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("Suppression_article", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
-            echo "\">Supprimer</a></th>
+            echo "\">Details</a><a class=\"btn btn-danger col-lg-6 col-md-5 col-sm-4 col-xs-4\" style=\"margin-left:5px;\" id=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "id", array()), "html", null, true);
+            echo "\" onclick=\"\"supprimer(";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "id", array()), "html", null, true);
+            echo ");\"\">Supprimer</a></th>
 \t\t           \t\t\t</tr>
 \t\t           \t\t\t";
         }
@@ -117,7 +120,38 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 
 ";
         
-        $__internal_95adbc14bd753701940d3e9fb1b95ceebbfd2a7d9022857e45612dd85e001137->leave($__internal_95adbc14bd753701940d3e9fb1b95ceebbfd2a7d9022857e45612dd85e001137_prof);
+        $__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b->leave($__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b_prof);
+
+    }
+
+    // line 43
+    public function block_javascripts($context, array $blocks = array())
+    {
+        $__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394 = $this->env->getExtension("native_profiler");
+        $__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394->enter($__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 44
+        echo "\t<script type=\"text/javascript\">
+\tfunction supprimer(supid){
+\t\$(function(){
+\t\$(\"#sup_\"+supid+\"\").click(function(){
+\t\t\$.ajax({
+\t\ttype:'GET',
+\t\turl:'http://localhost:8080/Extia/web/app_dev.php/supprimer'+supid,
+\t\ttimeout: 3000,
+\t\tsuccess: function(){
+\t\tconsole.log(\"article supprimé\")},
+\t\terror:function(){
+\t\talert('article nest pas supprimer');
+\t\t}
+\t});
+});
+});
+}
+</script>
+";
+        
+        $__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394->leave($__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394_prof);
 
     }
 
@@ -133,7 +167,7 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 
     public function getDebugInfo()
     {
-        return array (  110 => 34,  99 => 31,  95 => 30,  91 => 29,  87 => 28,  83 => 27,  80 => 26,  76 => 25,  57 => 8,  51 => 7,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  134 => 44,  128 => 43,  113 => 34,  100 => 31,  96 => 30,  92 => 29,  88 => 28,  84 => 27,  81 => 26,  77 => 25,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "FrontOfficeBundle::ArticleLayout.html.twig" %}*/
@@ -166,7 +200,7 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 /* 		           				<th scope="row">{{ article.title }}</th>*/
 /* 		           				<th scope="row">{{ article.body }}</th>*/
 /* 		           				<th scope="row">{{ article.createdBy }}</th>*/
-/* 		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="btn btn-danger col-lg-6 col-md-5 col-sm-4 col-xs-4" style="margin-left:5px;" href="{{ path('Suppression_article', {'id':article.id}) }}">Supprimer</a></th>*/
+/* 		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="btn btn-danger col-lg-6 col-md-5 col-sm-4 col-xs-4" style="margin-left:5px;" id="{{ article.id }}" onclick=""supprimer({{ article.id }});"">Supprimer</a></th>*/
 /* 		           			</tr>*/
 /* 		           			{% endfor %}*/
 /* 		           		</tbody>*/
@@ -177,4 +211,24 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 /*         </div>*/
 /*     </div>*/
 /* */
+/* {% endblock %}*/
+/* {% block javascripts %}*/
+/* 	<script type="text/javascript">*/
+/* 	function supprimer(supid){*/
+/* 	$(function(){*/
+/* 	$("#sup_"+supid+"").click(function(){*/
+/* 		$.ajax({*/
+/* 		type:'GET',*/
+/* 		url:'http://localhost:8080/Extia/web/app_dev.php/supprimer'+supid,*/
+/* 		timeout: 3000,*/
+/* 		success: function(){*/
+/* 		console.log("article supprimé")},*/
+/* 		error:function(){*/
+/* 		alert('article nest pas supprimer');*/
+/* 		}*/
+/* 	});*/
+/* });*/
+/* });*/
+/* }*/
+/* </script>*/
 /* {% endblock %}*/
