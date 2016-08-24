@@ -28,11 +28,14 @@
 		           				<th scope="row">{{ article.title }}</th>
 		           				<th scope="row">{{ article.body }}</th>
 		           				<th scope="row">{{ article.createdBy }}</th>
-		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="test btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" style="margin-left:5px;" id="{{ article.id }}">Supprimer</a></th>
+		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="supprimer btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" style="margin-left:5px;" id="{{ article.id }}">Supprimer</a></th>
 		           			</tr>
 		           			{% endfor %}
 		           		</tbody>
 		           </table>
+		           <div class="navigation">
+    					{{ knp_pagination_render(articles) }}
+					</div>
 		        </div>
 	          	<div class="col-md-6">
 	          	</div>

@@ -10,13 +10,14 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ArticleController extends Controller
 {
-    public function getArticlesAction()
+    public function getArticlesAction(Request $request)
     {
         $Repository = $this->getDoctrine()->getManager()->getRepository('ArticleBundle:Article');
         $Articles = $Repository->findAll();
-        //var_dump($Articles);
-        //die();
-        return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles));
+
+        $paginator  = $this->get('knp_paginator');
+        $Articles_pagination = $paginator->paginate($Articles,$request->query->get('page', 1),2);
+        return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles_pagination));
     }
 
     public function getArticleAction($id){

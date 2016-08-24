@@ -1,5 +1,5 @@
 $("document").ready(function(){
-		$(".test").click(function(){
+		$(".supprimer").click(function(){
 			var supid = $(this).attr('id');
 			console.log(supid);
 			$.ajax({

@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new ArticleBundle\ArticleBundle(),
             new FrontOfficeBundle\FrontOfficeBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
