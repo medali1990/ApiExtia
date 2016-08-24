@@ -14,8 +14,8 @@ class ArticleController extends Controller
         $Articles = new Article;
         $Articles = $this->getDoctrine()->getManager()->getRepository('ArticleBundle:Article')->findAll();
         
-        var_dump($Articles);
-        die();
+        //var_dump($Articles);
+        //die();
         return new JsonResponse(json_encode(array('Articles'=>$Articles)));
    }
 

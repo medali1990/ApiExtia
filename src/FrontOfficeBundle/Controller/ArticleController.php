@@ -61,14 +61,16 @@ class ArticleController extends Controller
       $em = $this->getDoctrine()->getEntityManager();
       $Article = $em->getRepository('ArticleBundle:Article')->find($id);
       if(!$Article){
-        throw $this->createNotFoundException('pas darticle');
+        throw $this->createNotFoundException('pas darticle pour cet id');
       }
       $em->remove($Article);
       $em->flush();
-      $Repository = $this->getDoctrine()->getManager()->getRepository('ArticleBundle:Article');
-        $Articles = $Repository->findAll();
-        //return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles));
         $response = new JsonResponse();
+        //return JsonResponse(json_encode(array('Articles'=>$Articles)));
         return $response->setData(array('article supprime' => $id));
+    }
+    public function testAction($id){
+      $response = new JsonResponse();
+      return $response->setData(array('id'=> $id));
     }
 }

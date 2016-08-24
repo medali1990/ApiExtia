@@ -23,20 +23,20 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe = $this->env->getExtension("native_profiler");
-        $__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe->enter($__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:ViewArticles.html.twig"));
+        $__internal_03f77608076ede97527a60a28b1c2281302486f2e94c186e57459707278645d8 = $this->env->getExtension("native_profiler");
+        $__internal_03f77608076ede97527a60a28b1c2281302486f2e94c186e57459707278645d8->enter($__internal_03f77608076ede97527a60a28b1c2281302486f2e94c186e57459707278645d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontOfficeBundle:FrontOffice:ViewArticles.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe->leave($__internal_deda56cdd28da177b38f917ca9dd5b66f21431da29ff2d40a852c769e1fb43fe_prof);
+        $__internal_03f77608076ede97527a60a28b1c2281302486f2e94c186e57459707278645d8->leave($__internal_03f77608076ede97527a60a28b1c2281302486f2e94c186e57459707278645d8_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216 = $this->env->getExtension("native_profiler");
-        $__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216->enter($__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_3bd27de62fadc76bdda8e135bf18fd9f1aaf90ac57fe7f7703cc3a35bbb50eb6 = $this->env->getExtension("native_profiler");
+        $__internal_3bd27de62fadc76bdda8e135bf18fd9f1aaf90ac57fe7f7703cc3a35bbb50eb6->enter($__internal_3bd27de62fadc76bdda8e135bf18fd9f1aaf90ac57fe7f7703cc3a35bbb50eb6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 4
         echo "  Liste articles-";
@@ -44,15 +44,15 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
         echo "
 ";
         
-        $__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216->leave($__internal_d256753cd19975abf60ca8b1a5a7998c73245285cc09ae3aed7a6e12ee176216_prof);
+        $__internal_3bd27de62fadc76bdda8e135bf18fd9f1aaf90ac57fe7f7703cc3a35bbb50eb6->leave($__internal_3bd27de62fadc76bdda8e135bf18fd9f1aaf90ac57fe7f7703cc3a35bbb50eb6_prof);
 
     }
 
     // line 7
     public function block_article_body($context, array $blocks = array())
     {
-        $__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b = $this->env->getExtension("native_profiler");
-        $__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b->enter($__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
+        $__internal_afe619f2863bbfc19eda9ba77d1cb944ba3694701a5dbc5618a766e144bd18b0 = $this->env->getExtension("native_profiler");
+        $__internal_afe619f2863bbfc19eda9ba77d1cb944ba3694701a5dbc5618a766e144bd18b0->enter($__internal_afe619f2863bbfc19eda9ba77d1cb944ba3694701a5dbc5618a766e144bd18b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_body"));
 
         // line 8
         echo "
@@ -78,7 +78,9 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
         $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) ? $context["articles"] : $this->getContext($context, "articles")));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
             // line 26
-            echo "\t\t           \t\t\t<tr>
+            echo "\t\t           \t\t\t<tr id=\"tr_";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "id", array()), "html", null, true);
+            echo "\">
 \t\t           \t\t\t\t<th scope=\"row\">";
             // line 27
             echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "id", array()), "html", null, true);
@@ -98,11 +100,9 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 \t\t           \t\t\t\t<th scope=\"row\" class=\"inline col-lg-4 col-md-4 col-sm-4 col-xs-4\"><a class=\"btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5\" href=\"";
             // line 31
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("Article", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
-            echo "\">Details</a><a class=\"btn btn-danger col-lg-6 col-md-5 col-sm-4 col-xs-4\" style=\"margin-left:5px;\" id=\"";
+            echo "\">Details</a><a class=\"test btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5\" style=\"margin-left:5px;\" id=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "id", array()), "html", null, true);
-            echo "\" onclick=\"\"supprimer(";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "id", array()), "html", null, true);
-            echo ");\"\">Supprimer</a></th>
+            echo "\">Supprimer</a></th>
 \t\t           \t\t\t</tr>
 \t\t           \t\t\t";
         }
@@ -120,38 +120,28 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 
 ";
         
-        $__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b->leave($__internal_e318c370c1a0140fe9820f4e118a5c0439fe35aada8069bac43526021274de3b_prof);
+        $__internal_afe619f2863bbfc19eda9ba77d1cb944ba3694701a5dbc5618a766e144bd18b0->leave($__internal_afe619f2863bbfc19eda9ba77d1cb944ba3694701a5dbc5618a766e144bd18b0_prof);
 
     }
 
     // line 43
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394 = $this->env->getExtension("native_profiler");
-        $__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394->enter($__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_0b3340d4a1bc710b8db260681191380576e6f62fb002c2d7c6be882e98fa9671 = $this->env->getExtension("native_profiler");
+        $__internal_0b3340d4a1bc710b8db260681191380576e6f62fb002c2d7c6be882e98fa9671->enter($__internal_0b3340d4a1bc710b8db260681191380576e6f62fb002c2d7c6be882e98fa9671_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 44
-        echo "\t<script type=\"text/javascript\">
-\tfunction supprimer(supid){
-\t\$(function(){
-\t\$(\"#sup_\"+supid+\"\").click(function(){
-\t\t\$.ajax({
-\t\ttype:'GET',
-\t\turl:'http://localhost:8080/Extia/web/app_dev.php/supprimer'+supid,
-\t\ttimeout: 3000,
-\t\tsuccess: function(){
-\t\tconsole.log(\"article supprimé\")},
-\t\terror:function(){
-\t\talert('article nest pas supprimer');
-\t\t}
-\t});
-});
-});
-}
-</script>
+        echo "\t";
+        $this->displayParentBlock("javascripts", $context, $blocks);
+        echo "
+\t<!-- mon fichier test -->
+    <script src=\"";
+        // line 46
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("/bundles/frontoffice/js/test.js"), "html", null, true);
+        echo "\"></script>
 ";
         
-        $__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394->leave($__internal_8dd975c1e091d4f8231074345a9990db72fd0d239f2b3792ff462f3576d49394_prof);
+        $__internal_0b3340d4a1bc710b8db260681191380576e6f62fb002c2d7c6be882e98fa9671->leave($__internal_0b3340d4a1bc710b8db260681191380576e6f62fb002c2d7c6be882e98fa9671_prof);
 
     }
 
@@ -167,7 +157,7 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 
     public function getDebugInfo()
     {
-        return array (  134 => 44,  128 => 43,  113 => 34,  100 => 31,  96 => 30,  92 => 29,  88 => 28,  84 => 27,  81 => 26,  77 => 25,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  140 => 46,  134 => 44,  128 => 43,  113 => 34,  102 => 31,  98 => 30,  94 => 29,  90 => 28,  86 => 27,  81 => 26,  77 => 25,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "FrontOfficeBundle::ArticleLayout.html.twig" %}*/
@@ -195,12 +185,12 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 /* 		           		</thead>*/
 /* 		           		<tbody>*/
 /* 		           			{% for article in articles %}*/
-/* 		           			<tr>*/
+/* 		           			<tr id="tr_{{ article.id }}">*/
 /* 		           				<th scope="row">{{ article.id }}</th>*/
 /* 		           				<th scope="row">{{ article.title }}</th>*/
 /* 		           				<th scope="row">{{ article.body }}</th>*/
 /* 		           				<th scope="row">{{ article.createdBy }}</th>*/
-/* 		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="btn btn-danger col-lg-6 col-md-5 col-sm-4 col-xs-4" style="margin-left:5px;" id="{{ article.id }}" onclick=""supprimer({{ article.id }});"">Supprimer</a></th>*/
+/* 		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="test btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" style="margin-left:5px;" id="{{ article.id }}">Supprimer</a></th>*/
 /* 		           			</tr>*/
 /* 		           			{% endfor %}*/
 /* 		           		</tbody>*/
@@ -213,22 +203,7 @@ class __TwigTemplate_863c4c5f5cc9ab72b2be822f7895af4f3c5f4b61aab1baa7ea3c3110709
 /* */
 /* {% endblock %}*/
 /* {% block javascripts %}*/
-/* 	<script type="text/javascript">*/
-/* 	function supprimer(supid){*/
-/* 	$(function(){*/
-/* 	$("#sup_"+supid+"").click(function(){*/
-/* 		$.ajax({*/
-/* 		type:'GET',*/
-/* 		url:'http://localhost:8080/Extia/web/app_dev.php/supprimer'+supid,*/
-/* 		timeout: 3000,*/
-/* 		success: function(){*/
-/* 		console.log("article supprimé")},*/
-/* 		error:function(){*/
-/* 		alert('article nest pas supprimer');*/
-/* 		}*/
-/* 	});*/
-/* });*/
-/* });*/
-/* }*/
-/* </script>*/
+/* 	{{ parent() }}*/
+/* 	<!-- mon fichier test -->*/
+/*     <script src="{{ asset('/bundles/frontoffice/js/test.js') }}"></script>*/
 /* {% endblock %}*/

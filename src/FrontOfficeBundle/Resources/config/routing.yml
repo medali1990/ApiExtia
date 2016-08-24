@@ -13,3 +13,7 @@ Ajout_article:
 Suppression_article:
     path:     /supprimer/{id}
     defaults: { _controller: FrontOfficeBundle:Article:DeleteArticle }
+
+test_article:
+    path:     /test/{id}
+    defaults: { _controller: FrontOfficeBundle:Article:test }

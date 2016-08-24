@@ -151,6 +151,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'Suppression_article')), array (  '_controller' => 'FrontOfficeBundle\\Controller\\ArticleController::DeleteArticleAction',));
         }
 
+        // test_article
+        if (0 === strpos($pathinfo, '/test') && preg_match('#^/test/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'test_article')), array (  '_controller' => 'FrontOfficeBundle\\Controller\\ArticleController::testAction',));
+        }
+
         // article_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_homepage')), array (  '_controller' => 'ArticleBundle\\Controller\\DefaultController::indexAction',));

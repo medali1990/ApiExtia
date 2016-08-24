@@ -23,12 +23,12 @@
 		           		</thead>
 		           		<tbody>
 		           			{% for article in articles %}
-		           			<tr>
+		           			<tr id="tr_{{ article.id }}">
 		           				<th scope="row">{{ article.id }}</th>
 		           				<th scope="row">{{ article.title }}</th>
 		           				<th scope="row">{{ article.body }}</th>
 		           				<th scope="row">{{ article.createdBy }}</th>
-		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="btn btn-danger col-lg-6 col-md-5 col-sm-4 col-xs-4" style="margin-left:5px;" id="{{ article.id }}" onclick=""supprimer({{ article.id }});"">Supprimer</a></th>
+		           				<th scope="row" class="inline col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" href="{{ path('Article', {'id':article.id}) }}">Details</a><a class="test btn btn-primary col-lg-5 col-md-5 col-sm-5 col-xs-5" style="margin-left:5px;" id="{{ article.id }}">Supprimer</a></th>
 		           			</tr>
 		           			{% endfor %}
 		           		</tbody>
@@ -41,22 +41,7 @@
 
 {% endblock %}
 {% block javascripts %}
-	<script type="text/javascript">
-	function supprimer(supid){
-	$(function(){
-	$("#sup_"+supid+"").click(function(){
-		$.ajax({
-		type:'GET',
-		url:'http://localhost:8080/Extia/web/app_dev.php/supprimer'+supid,
-		timeout: 3000,
-		success: function(){
-		console.log("article supprimé")},
-		error:function(){
-		alert('article nest pas supprimer');
-		}
-	});
-});
-});
-}
-</script>
+	{{ parent() }}
+	<!-- mon fichier test -->
+    <script src="{{ asset('/bundles/frontoffice/js/test.js') }}"></script>
 {% endblock %}
