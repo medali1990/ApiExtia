@@ -16,7 +16,7 @@ class ArticleController extends Controller
         $Articles = $Repository->findAll();
 
         $paginator  = $this->get('knp_paginator');
-        $Articles_pagination = $paginator->paginate($Articles,$request->query->get('page', 1),2);
+        $Articles_pagination = $paginator->paginate($Articles,$request->query->get('page', 1),4);
         return $this->render('FrontOfficeBundle:FrontOffice:ViewArticles.html.twig',array('articles'=>$Articles_pagination));
     }
 
